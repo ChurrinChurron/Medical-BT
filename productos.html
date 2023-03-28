@@ -14,10 +14,10 @@
     <script src="https://kit.fontawesome.com/2118f75376.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/general.css">
     <link rel="stylesheet" href="src/css/productos.css">
-    <title>Parches Capsicum</title>
+    <title>Nuestros Productos</title>
 </head>
 <body>
-    <header>
+    <header id="headerProductos">
         <nav>
             <h1><a href="index.html"><img src="assets/logo-header.svg" alt="logo Medical B&T"></a></h1>
             <div class="links__desktop">
@@ -63,8 +63,8 @@
                 </div>
             </div>
         </nav>
-        <p>Inicio > Nuestros productos > Parches Capsicum</p>
-        <h2>Parches Capsicum</h2>
+        <p>Inicio > Nuestros productos</p>
+        <h2>Nuestros Productos</h2>
         <div class="header__links">
             <a href="#" id="headerFace"><i class="fa-brands fa-facebook-f"></i><span>Síguenos en Facebook</span></a>
             <a href="#" id="headerInst"><i class="fa-brands fa-instagram"></i><span>Síguenos en Instagram</span></a>
@@ -72,8 +72,77 @@
         </div>
     </header>
 
-    <main>
-        <section></section>
+    <main id="mainCampaña">
+        <section class="listaProd">
+            <div class="listaProd__selec">
+                <h3>CATEGORÍAS</h3>
+                <div class="selec__lista">
+                    <p>9 tipos de productos</p>
+                    <div class="lista__opciones">
+                        <label for="productos">Ordenar por:</label>
+                        <select name="productos" id="productos">
+                            <option value="" disabled selected>Seleccionar</option>
+                            <option value="esparadrapo">Esparadrapos</option>
+                            <option value="gasa absorbente esteril">Gasa Absorbente Estéril</option>
+                            <option value="vendas elasticas">Vendas Elásticas</option>
+                            <option value="vendas adhesivas">Vendas Adhesivas</option>
+                            <option value="parches">Parches Capsicum</option>
+                            <option value="gasa hospitalaria">Gasa Hospitalaria</option>
+                            <option value="jeringas">Jeringas Descartables</option>
+                            <option value="gasa aseptica">Gasa Aséptica</option>
+                            <option value="guantes">Guantes Quirúrgicos Estériles</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="listaProd__lista">
+                <div class="listaProd__prod">
+                    <img src="assets/productos/esparadrapo-1.webp" alt="esparadrapos">
+                    <p>Esparadrapos</p>
+                    <a href="esparadrapos.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/gasa-esteril-1.webp" alt="gasa esteril">
+                    <p>Gasa Absorbente Estéril</p>
+                    <a href="gasa_esteril.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/vendas-elast-1.webp" alt="vendas elasticas">
+                    <p>Vendas Elásticas</p>
+                    <a href="vendas_elasticas.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/vendas-1.webp" alt="vendas adhesivas">
+                    <p>Vendas Adhesivas</p>
+                    <a href="vendas_adhesivas.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/capsicum-1.webp" alt="parches">
+                    <p>Parches Capsicum</p>
+                    <a href="parches_capsicum.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/gasa-hospit-1.webp" alt="gasa hospitalaria">
+                    <p>Gasa Hospitalaria</p>
+                    <a href="gasa_hospitalaria.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/jeringas-1.webp" alt="jeringas">
+                    <p>Jeringas Descartables</p>
+                    <a href="jeringas.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/gasa-asep-1.webp" alt="gasa aseptica">
+                    <p>Gasa Aséptica</p>
+                    <a href="gasa_aseptica.html">Ver más</a>
+                </div>
+                <div class="listaProd__prod">
+                    <img src="assets/productos/guantes-1.webp" alt="guantes">
+                    <p>Guantes Quirúrgicos Estériles</p>
+                    <a href="guantes.html">Ver más</a>
+                </div>
+            </div>
+        </section>
 
         <section class="oferta">
             <div class="oferta__conten">
@@ -93,7 +162,26 @@
             <img src="assets/productos/esparadrapo-1.webp" alt="esparadrapo">
         </section>
 
-        
+        <section class="contacto">
+            <div class="contacto__datos">
+                <h3>Contáctanos</h3>
+                <p id="contacInfo">Contáctenos para obtener más información.</p>
+                <p class="contacto__info"><img src="assets/correo.svg" alt="correo">cchoque.medical@gmail.com</p>
+                <p class="contacto__info"><img src="assets/telefono-azul.svg" alt="telefono">+51 914 689 090</p>
+                <p class="contacto__info"><img src="assets/ubicacion.svg" alt="ubicacion">Av. José Granda 3873, Lima, Perú</p>
+            </div>
+            <div class="contacto__form">
+                <form action="" method="post">
+                    <p>Completa el siguiente formulario y te enviaremos la información que necesitas.</p>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre / Razón Social">
+                    <input type="email" name="correo" id="correo" placeholder="Correo electrónico">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                    <input type="text" name="dni" id="dni" placeholder="RUC / DNI">
+                    <textarea name="detalles" id="detalles" cols="20" rows="10" placeholder="Detalles"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
