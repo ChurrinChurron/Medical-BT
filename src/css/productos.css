@@ -1,0 +1,874 @@
+main {
+
+    padding: 15em 0 0 0;
+}
+
+/*PRODUCTO PREVIEW*/
+
+.producto {
+
+    height: 32em;
+    background-color: var(--azul-rey-10);
+}
+
+.producto__caja {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 9em;
+}
+
+.producto__caja img {
+
+    width: 80%;
+    max-width: 20em;
+}
+
+#imgEsparadrapo {
+
+    width: 90%;
+    max-width: 24em;
+}
+
+#imgVendas {
+
+    max-width: 15em;
+}
+
+#imgParches {
+
+    max-width: 17em;
+}
+
+#imgGasaHosp {
+
+    margin-top: 3em;
+}
+
+#imgJeringa {
+
+    max-width: 24em;
+    margin-top: 2em;
+}
+
+#imgAsept {
+
+    width: 90%;
+    max-width: 22em;
+    margin-top: 3em;
+}
+
+.producto__conten {
+
+    width: 90%;
+    max-width: 30em;
+    margin-top: 2em;
+    padding: 1.5em 2em 2em 2em;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 4px 2px var(--blanco-gris);
+    background-color: var(--blanco);
+}
+
+.producto__conten h3 {
+
+    font-size: 1.3em;
+    font-family: var(--medium);
+    color: var(--azul-rey);
+}
+
+.producto__conten p {
+
+    padding: 1.5em 0 3em 0;
+    font-size: 0.860em;
+}
+
+.producto__conten a {
+
+    text-decoration: none;
+    padding: 0.6em 2.2em 0.6em 3em;
+    border-radius: 2em;
+    border: 1px solid transparent;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.producto__conten a i {
+
+    margin-left: 1.2em;
+}
+
+.producto__conten a:hover {
+
+    border: 1px solid var(--rojo);
+    background-color: var(--blanco);
+    color: var(--rojo);
+}
+
+/*PRESENTACIONES*/
+
+.presentacion {
+
+    padding: 4em 1.4em;
+}
+
+.presentacion h3 {
+
+    padding: 0.5em 0;
+    border-radius: 2em;
+    text-align: center;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+}
+
+.presentacion__caja {
+
+    margin: 4em auto 1em auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 70em;
+}
+
+.presentacion__conten {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.presentacion__conten img {
+
+    margin-bottom: 1.8em;
+    width: 75%;
+    max-width: 20em;
+    border: 1px solid var(--gris);
+    border-radius: 2em;
+}
+
+.presentacion__conten p {
+
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--azul-rey);
+}
+
+.presentacion a {
+
+    text-decoration: none;
+    display: block;
+    width: 63%;
+    max-width: 13.5em;
+    margin: 0 auto;
+    padding: 0.6em 2.2em 0.6em 3em;
+    border-radius: 2em;
+    border: 1px solid transparent;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.presentacion a i {
+
+    margin-left: 1.2em;
+}
+
+.presentacion a:hover {
+
+    border: 1px solid var(--rojo);
+    background-color: var(--blanco);
+    color: var(--rojo);
+}
+
+/*OFERTA*/
+
+.oferta {
+
+    position: relative;
+    padding-top: 3em;
+}
+
+.oferta--campaña {
+
+    padding-top: 0;
+}
+
+.oferta__conten {
+
+    position: relative;
+}
+
+#fondOfertaMov, #fondOfertaMovDos {
+
+    width: 100%;
+    height: 64em;
+}
+
+.oferta__texto {
+
+    position: absolute;
+    top: 0;
+    padding: 0 1.4em;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.oferta__texto img {
+
+    width: 14em;
+    margin-bottom: 1.2em;
+}
+
+.oferta__texto h3 {
+
+    font-size: 1.9em;
+    font-family: var(--medium);
+}
+
+.oferta__texto h4 {
+
+    margin: 1.2em 0;
+    font-size: 0.9em;
+    font-family: var(--light);
+}
+
+.oferta__texto p {
+
+    font-family: var(--light);
+    font-size: 0.750em;
+}
+
+.oferta__texto a {
+
+    text-decoration: none;
+    display: block;
+    width: 77%;
+    max-width: 15.5em;
+    margin: 1.6em auto 0 auto;
+    padding: 0.6em 1em 0.6em 2em;
+    border-radius: 2em;
+    font-size: 0.8em;
+    border: 1px solid var(--blanco);
+    background-color: transparent;
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.oferta__texto a i {
+
+    margin-left: 1.2em;
+}
+
+.oferta__texto a:hover {
+
+    border: 1px solid var(--rojo);
+    color: var(--rojo);
+}
+
+.oferta > img {
+
+    position: absolute;
+    top: 39em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 30em;
+}
+
+#ofertaImgGasa {
+
+    width: 80%;
+    max-width: 24em;
+}
+
+/*OTROS PRODUCTOS*/
+
+.articulos {
+
+    padding: 0;
+}
+
+.articulos h3 {
+
+    position: relative;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: var(--medium);
+    color: var(--rojo);
+}
+
+.articulos h3::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1.7em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9em;
+    height: 0.040em;
+    background-color: var(--azul-rey);
+}
+
+.articulos__caja {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+    padding: 5em 2em;
+    background-color: var(--blanco-gris);
+}
+
+.articulos__conten {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.8em;
+}
+
+.articulos__conten:last-child {
+
+    margin-bottom: 0;
+}
+
+.articulos__conten img {
+
+    width: 80%;
+    max-width: 21em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: var(--blanco);
+}
+
+.articulos__conten:first-child img {
+
+    width: 75%;
+    padding: 1.5em 2em;
+}
+
+.articulos__conten:last-child img{
+
+    padding: 4.2em 2em;
+}
+
+.articulos__conten p {
+
+    margin: 1.2em 0;
+}
+
+.articulos__conten a {
+
+    text-decoration: none;
+    padding: 0.6em 4em;
+    border-radius: 2em;
+    font-size: 0.9em;
+    border: 1px solid transparent;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.articulos__conten a:hover {
+
+    transform: scale(1.050);
+    border: 1px solid var(--rojo);
+    background-color: var(--blanco);
+    color: var(--rojo);
+}
+
+@media screen and (min-width: 768px) {
+    
+    /*PRESENTACIONES*/
+
+    .presentacion {
+
+        padding: 4em;
+    }
+
+    .presentacion__caja {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .presentacion__conten {
+
+        margin: 0 0.6em 4em 0.6em;
+    }
+
+    .presentacion__conten img {
+
+        width: 90%;
+        max-width: 17em;
+    }
+
+    .presentacion__conten p {
+
+        width: 14.5em;
+        font-size: 1.030em;
+        text-align: left;
+    }
+
+    .presentacion a {
+
+        max-width: 15.4em;
+        padding: 0.6em 3.2em 0.6em 4em;
+        font-size: 1.150em;
+    }
+
+    /*OFERTA*/
+
+    .oferta {
+
+        padding-top: 3em;
+    }
+
+    .oferta--campaña {
+
+        padding-top: 0;
+    }
+
+    #fondOfertaMov, #fondOfertaMovDos {
+
+        width: 100%;
+        max-width: 65em;
+        height: 28em;
+    }
+
+    #fondOfertaMovDos {
+
+        height: 31em;
+    }
+
+    .oferta__texto {
+
+        width: 46%;
+        max-width: 24em;
+        top: -1em;
+        left: 4em;
+        padding: 0 1.4em;
+        text-align: left;
+    }
+
+    .oferta__texto--dos {
+
+        max-width: 25em;
+        top: -1.6em;
+        left: 3em;
+    }
+
+    .oferta__texto img {
+
+        margin-bottom: 0;
+    }
+
+    .oferta__texto--dos h3 {
+
+        font-size: 1.8em;
+    }
+
+    .oferta__texto h4 {
+
+        margin: 1em 0;
+        font-size: 0.9em;
+    }
+
+    .oferta__texto--dos h4 {
+
+        font-size: 0.850em;
+    }
+
+    .oferta__texto p {
+
+        font-size: 0.710em;
+    }
+
+    .oferta__texto a {
+
+        margin: 1.6em 0 0 0;
+        font-size: 0.8em;
+    }
+
+    .oferta > img {
+
+        top: 59%;
+        transform: translateY(-50%);
+        left: 50%;
+        width: 95%;
+        max-width: 24em;
+    }
+
+    #ofertaImgGasa {
+
+        width: 40%;
+        max-width: 24em;
+    }
+
+    /*OTROS PRODUCTOS*/
+
+    .articulos {
+
+        padding-top: 6em;
+    }
+    
+    .articulos__caja {
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2.5em;
+        padding: 4em 2em 0.6em 2em;
+    }
+
+    .articulos__conten img {
+
+        width: 80%;
+        max-width: 18em;
+        padding: 2em;
+    }
+
+    .articulos__conten:first-child img {
+
+        padding: 1.3em 2em;
+    }
+
+    .articulos__conten:last-child img{
+
+        padding: 3.6em 2em;
+    }
+
+    .articulos__conten p {
+
+        font-size: 0.9em;
+    }
+
+    .articulos__conten a {
+
+        padding: 0.7em 5.4em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    /*PRODUCTO PREVIEW*/
+
+    .producto {
+
+        height: 14em;
+    }
+
+    .producto__caja {
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        bottom: 10em;
+    }
+
+    .producto__caja img {
+
+        order: 1;
+        max-width: 22em;
+        margin-left: 2.2em;
+    }
+
+    #imgEsparadrapo {
+
+        max-width: 28em;
+        margin-bottom: 2em;
+    }
+
+    #imgVendas {
+
+        max-width: 19em;
+    }
+
+    #imgParches {
+
+        max-width: 24em;
+    }
+
+    #imgGasaHosp {
+
+        max-width: 27em;
+        margin: 0 0 3em 2.2em;
+    }
+
+    #imgJeringa {
+
+        max-width: 27em;
+        margin: 0 0 0 2.2em;
+    }
+
+    #imgElast {
+
+        max-width: 24em;
+    }
+
+    #imgAsept {
+
+        max-width: 28em;
+        margin: 0 0 1.5em 2.2em;
+    }
+
+    .producto__conten {
+        max-width: 32em;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 1.5em 2em 2em 2em;
+        border-radius: 40px;
+    }
+
+    .producto__conten h3 {
+
+        font-size: 1.4em;
+        text-align: left;
+    }
+
+    .producto__conten p {
+
+        font-size: 0.850em;
+        text-align: left;
+    }
+
+    .producto__conten a {
+
+        font-size: 0.920em;
+        margin: 0 auto;
+    }
+
+    /*PRESENTACIONES*/
+
+    .presentacion {
+
+        padding: 3em 6em;
+    }
+
+    .presentacion h3 {
+
+        padding: 0.8em 0;
+        max-width: 60em;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .presentacion__caja {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .presentacion__conten {
+    
+        margin: 0 0.6em 4em 0.6em;
+    }
+    
+    .presentacion__conten img {
+    
+        max-width: 20em;
+    }
+
+    /*OFERTA*/
+
+    .oferta {
+
+        padding-top: 2em;
+    }
+
+    .oferta--campaña {
+
+        padding-top: 0;
+    }
+
+    #fondOfertaMov, #fondOfertaMovDos {
+
+        width: 100%;
+        max-width: 80em;
+        height: 32em;
+    }
+
+    #fondOfertaMovDos {
+
+        height: 35em;
+    }
+    
+    .oferta__texto {
+    
+        max-width: 25em;
+        top: -2em;
+        left: 6em;
+        padding: 0 1.4em;
+    }
+
+    .oferta__texto--dos {
+
+        max-width: 25em;
+        top: -2.2em;
+        left: 5em;
+    }
+    
+    .oferta__texto img {
+    
+        width: 16em;
+        margin-bottom: 0.2em;
+    }
+
+    .oferta__texto h3 {
+
+        font-size: 2.4em;
+    }
+
+    .oferta__texto--dos h3 {
+
+        font-size: 2.1em;
+    }
+    
+    .oferta__texto h4 {
+
+        margin: 1.2em 0;
+        font-size: 1.1em;
+    }
+
+    .oferta__texto--dos h4 {
+
+        font-size: 0.95em;
+    }
+    
+    .oferta__texto p {
+    
+        font-size: 0.760em;
+        color: var(--blanco-gris);
+    }
+    
+    .oferta__texto a {
+    
+        font-size: 0.9em;
+    }
+    
+    .oferta > img {
+    
+        top: 62%;
+        transform: translateY(-50%);
+        left: 46%;
+        width: 95%;
+        max-width: 34em;
+    }
+
+    #ofertaImgGasa {
+
+        top: 50%;
+        left: 50%;
+        max-width: 29em;
+    }
+
+    /*OTROS PRODUCTOS*/
+
+    .articulos h3 {
+
+        margin-left: 3em;
+        text-align: left;
+        font-size: 2.2em;
+    }
+
+    .articulos h3::after {
+        
+        left: 4.4em;
+    }
+
+    .articulos__conten img {
+
+        max-width: 23em;
+    }
+
+    .articulos__conten:first-child img {
+
+        padding: 1.3em 2.3em;
+    }
+
+    .articulos__conten:last-child img{
+
+        padding: 4.540em 2em;
+    }
+
+    .articulos__conten a {
+
+        padding: 0.8em 5.4em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    /*OFERTA*/
+        
+    #fondOfertaMov, #fondOfertaMovDos {
+    
+        max-width: 95em;
+        height: 35em;
+    }
+
+    #fondOfertaMovDos {
+
+        height: 36em;
+    }
+        
+    .oferta__texto, .oferta__texto--dos {
+        
+        max-width: 26.8em;
+        left: 10em;
+    }
+    
+    .oferta__texto h3 {
+    
+        font-size: 2.6em;
+    }
+
+    .oferta__texto--dos h3 {
+
+        font-size: 2.3em;
+    }
+        
+    .oferta__texto h4 {
+    
+        font-size: 1.2em;
+    }
+
+    .oferta__texto--dos h4 {
+
+        font-size: 1.060em;
+    }
+        
+    .oferta__texto p {
+        
+        font-size: 0.8em;
+    }
+        
+    .oferta__texto a {
+        
+        font-size: 0.950em;
+    }
+        
+    .oferta > img {
+        
+        left: 43%;
+        max-width: 42em;
+    }
+
+    #ofertaImgGasa {
+
+        left: 49%;
+        max-width: 32em;
+    }
+
+    /*OTROS PRODUCTOS*/
+
+    .articulos h3 {
+
+        margin-left: 6em;
+    }
+}
