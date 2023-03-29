@@ -1,0 +1,434 @@
+/*NOSOTROS*/
+
+.nosotros {
+
+    padding: 6em 1.4em;
+    background-color: var(--blanco-gris);
+}
+
+.nosotros__def {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.nosotros__def img {
+
+    width: 100%;
+    max-width: 30em;
+    margin: 0 auto 3em auto;
+    border-radius: 0.6em;
+}
+
+.nosotros__def p, .nosotros__def ul {
+
+    font-size: 0.9em;
+}
+
+.nosotros__def ul {
+
+    padding-left: 1.4em;
+}
+
+/*GALERIA*/
+
+.nosotros__galeria {
+
+    position: relative;
+}
+
+.galeria__conten {
+
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.galeria__conten::-webkit-scrollbar {
+
+    appearance: none;
+}
+
+.galeria__img {
+
+    display: flex;
+    width: 100%;
+    transition: .4s;
+}
+
+.galeria__img img {
+
+    width: 50%;
+    max-width: 13em;
+    border-radius: 0.8em;
+    margin-right: 2em;
+}
+
+#btnIzq, #btnDer {
+
+    display: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 35%;
+    font-size: 2em;
+    background-color: transparent;
+    color: var(--rojo);
+    cursor: pointer;
+}
+
+#btnIzq {
+
+    left: 0;
+}
+
+#btnDer {
+
+    right: 0;
+}
+
+/*MISION Y VISION*/
+
+.objetivos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 1.4em 0 1.4em;
+    background-color: var(--blanco);
+}
+
+.objetivos__conten {
+
+    margin-bottom: 6em;
+}
+
+.objetivos__conten, .objetivos__tarjetas {
+
+    position: relative;
+    width: 100%;
+    max-width: 30em;
+}
+
+.objetivos__conten img {
+
+    width: 100%;
+    border-radius: 1em;
+}
+
+#objIcono {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    max-width: 15em;
+    transition: .4s;
+}
+
+.objetivos__conten:hover #objIcono {
+
+    top: 0%;
+    filter: drop-shadow(1px 1px 2px var(--gris));
+}
+
+.objetivos__texto {
+
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--blanco);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.objetivos__tarjetas:hover + .objetivos__texto,
+.objetivos__texto:hover {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.objetivos__texto h3 {
+
+    font-family: var(--medium);
+    margin-bottom: 0.6em;
+}
+
+.objetivos__texto p {
+
+    font-size: 0.740em;
+    padding: 0 1.2em;
+}
+
+/*VALORES*/
+
+.valores {
+
+    padding: 5em 1.4em;
+    background: url(../../assets/nosotros/fondo-valores.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.valores h3 {
+
+    position: relative;
+    font-size: 1.4em;
+    font-family: var(--light);
+    text-align: center;
+    color: var(--blanco);
+}
+
+.valores h3::after {
+
+    content: "";
+    position: absolute;
+    top: 1.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.6em;
+    height: 0.090em;
+    background-color: var(--blanco);
+}
+
+.valores__conten {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em 0;
+    margin-top: 6em;
+}
+
+.valores__tarjeta {
+
+    position: relative;
+    width: 100%;
+    max-width: 25em;
+    transition: .4s;
+}
+
+.valores__tarjeta:hover .tarjeta__conten h4 {
+
+    top: 23%;
+}
+
+.tarjeta__conten {
+
+    position: relative;
+}
+
+.tarjeta__conten img {
+
+    width: 100%;
+    border-radius: 0.9em;
+}
+
+.tarjeta__conten h4 {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    letter-spacing: 0.070em;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 4px var(--negro);
+    font-size: 1.3em;
+    font-family: var(--medium);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.tarjeta__fondo {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.3%;
+    border-radius: 0.9em;
+    background-color: var(--azul-rey-50);
+    filter: contrast(1.5) brightness(0.5);
+    transition: .4s;
+}
+
+.valores__tarjeta:hover .tarjeta__fondo {
+
+    background-color: var(--azul-rey-70);
+    filter: contrast(1.7) brightness(0.4);
+}
+
+.tarjetas__texto {
+
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    padding: 0 1.4em;
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--blanco);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.valores__tarjeta:hover .tarjetas__texto {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+    
+    /*NOSOTROS*/
+
+    .nosotros {
+
+        padding: 8em 3em;
+    }
+
+    .nosotros__def {
+
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto 5em auto;
+        max-width: 66em;
+    }
+    
+    .nosotros__def img {
+        
+        max-width: 25em;
+        margin: 0 3.5em 0 0;
+    }
+
+    .nosotros__def--dos img {
+
+        order: 1;
+        margin: 0 0 0 3.5em;
+    }
+    
+    .nosotros__def p, .nosotros__def ul {
+
+        font-size: 0.960em;
+    }
+
+    /*GALERIA*/
+
+    .nosotros__galeria {
+
+        margin: 8em auto 0 auto;
+        max-width: 60em;
+    }
+
+    .galeria__conten {
+
+        overflow: hidden;
+    }
+
+    .galeria__img {
+
+        width: 100%;
+    }
+
+    .galeria__img img {
+
+        width: 50%;
+        max-width: 13.5em;
+    }
+
+    #btnIzq, #btnDer {
+
+        display: block;
+    }
+
+    #btnIzq {
+
+        left: -1em;
+    }
+
+    #btnDer {
+
+        right: -1em;
+    }
+
+    /*MISION Y VISION*/
+
+    .objetivos {
+
+        flex-direction: row;
+        gap: 0 5em;
+        padding: 10em 1.4em 0 1.4em;
+    }
+
+    .objetivos__conten {
+
+        margin-bottom: 10em;
+    }
+
+    .objetivos__texto {
+
+        top: 50%;
+    }
+
+    .objetivos__texto h3 {
+
+        margin-bottom: 1.4em;
+    }
+
+    .objetivos__texto p {
+
+        font-size: 0.820em;
+        padding: 0 1.2em;
+    }
+
+    /*VALORES*/
+
+    .valores {
+
+        padding: 7em 1.4em;
+    }
+    
+    .valores h3 {
+    
+        font-size: 1.6em;
+    }
+    
+    .valores__conten {
+    
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4em 5em;
+        max-width: 76em;
+        margin: 6em auto 0 auto;
+    }
+    
+    .valores__tarjeta {
+    
+        max-width: 22em;
+    }
+    
+    
+    .tarjeta__conten img {
+    
+        width: 100%;
+        border-radius: 0.9em;
+    }
+    
+    .tarjeta__conten h4 {
+    
+        font-size: 1.4em;
+    }
+    
+    .tarjetas__texto {
+    
+        font-size: 0.840em;
+    }
+    
+}

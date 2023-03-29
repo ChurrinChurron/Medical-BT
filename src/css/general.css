@@ -48,6 +48,8 @@
     --azul-bondi: #0088A0;
     --azul-rey: #1C549A;
     --azul-rey-10: rgba(28, 84, 154, 0.1);
+    --azul-rey-50: rgba(28, 84, 154, 0.5);
+    --azul-rey-70: rgba(28, 84, 154, 0.7);
 }
 
 * {
@@ -124,7 +126,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     padding: 1em;
     box-shadow: 0 0 2px 2px var(--blanco-gris);
@@ -210,6 +212,11 @@ nav h1 img {
 
     padding: 6em 1.4em 0 1.4em;
     background-color: var(--blanco-perla);
+}
+
+.certificaciones--general {
+
+        padding: 6em 1.4em;
 }
 
 .certificaciones h3 {
