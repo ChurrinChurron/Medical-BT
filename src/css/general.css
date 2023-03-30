@@ -44,10 +44,9 @@
     --negro: #000000;
     --rojo: #ED1C25;
     --verde: #56A543;
-    --turquesa: #8CCCCB;
-    --azul-bondi: #0088A0;
     --azul-rey: #1C549A;
     --azul-rey-10: rgba(28, 84, 154, 0.1);
+    --azul-rey-20: rgba(28, 84, 154, 0.2);
     --azul-rey-50: rgba(28, 84, 154, 0.5);
     --azul-rey-70: rgba(28, 84, 154, 0.7);
 }
@@ -678,6 +677,11 @@ footer {
         justify-content: space-around;
         padding: 1em;
     }
+
+    nav h1 {
+
+        margin: 0;
+    }
     
     nav h1 img {
     
@@ -712,6 +716,7 @@ footer {
 
         font-size: 1.080em;
         font-family: var(--medium);
+        margin: 0;
     }
 
     .links__datos a img {
@@ -814,6 +819,7 @@ footer {
         position: absolute;
         right: 0;
         top: 50%;
+        z-index: 1;
         transform: translateY(-50%);
         display: flex;
         flex-direction: column;
